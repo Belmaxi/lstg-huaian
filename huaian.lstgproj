@@ -1,0 +1,553 @@
+﻿0,{"$type":".Project.ProjectRoot, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Project","EditWindow":""}],"AttributeCount":1}
+1,{"$type":".ProjSettings, LuaSTGEditorSharp","Attributes":[{"attrCap":"Output Name","attrInput":"","EditWindow":""},{"attrCap":"Author","attrInput":"LuaSTG User","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Allow sc practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":4}
+1,{"$type":".EditorVersion, LuaSTGEditorSharp","Attributes":[{"attrCap":"Editor version","attrInput":"0.0.7.7","EditWindow":""}],"AttributeCount":1}
+1,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Classes","EditWindow":""}],"AttributeCount":1}
+2,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Bosses","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Easy","EditWindow":""}],"AttributeCount":1}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"契玄寺 黑","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"契玄寺 黑","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"寻符 [灵力诱导]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"90","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"lstg.tmpvar.signal = 1","EditWindow":"code"}],"AttributeCount":1}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+8,{"$type":".Advanced.AdvancedRepeat.AdvancedRepeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".Advanced.AdvancedRepeat.VariableCollection, LuaSTGEditorSharp","Attributes":[]}
+9,{"$type":".Bullet.CreateBullet, ","Attributes":[{"attrCap":"Name","attrInput":"\"S1S1:Easy\"","EditWindow":"bulletDef"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Parameters","attrInput":"3","EditWindow":"bulletParam"}],"AttributeCount":3}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"150","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"ran:Int(-150,150),ran:Int(100,140)","EditWindow":"position"},{"attrCap":"Frame","attrInput":"120","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_ACC_DEC","EditWindow":"interpolation"}],"AttributeCount":3}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"30","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"lstg.tmpvar.signal = 0","EditWindow":"code"}],"AttributeCount":1}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"120","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"lstg.tmpvar.signal = 1","EditWindow":"code"}],"AttributeCount":1}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
+8,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"","EditWindow":""}],"AttributeCount":5}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"5","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"3","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"i","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"ran:Int(0,360)","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"120","EditWindow":""}],"AttributeCount":5}
+10,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"local sg = ran:Sign()","EditWindow":"code"}],"AttributeCount":1}
+10,{"$type":".General.IfNode, LuaSTGEditorSharp","Attributes":[{"attrCap":"Condition","attrInput":"lstg.tmpvar.signal == 1","EditWindow":""}],"AttributeCount":1}
+11,{"$type":".General.IfThen, LuaSTGEditorSharp","Attributes":[]}
+12,{"$type":".General.IfNode, LuaSTGEditorSharp","Attributes":[{"attrCap":"Condition","attrInput":"sg==1","EditWindow":""}],"AttributeCount":1}
+13,{"$type":".General.IfThen, LuaSTGEditorSharp","Attributes":[]}
+14,{"$type":".Bullet.CreateSimpleBullet, ","Attributes":[{"attrCap":"Style","attrInput":"ball_small","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Velocity","attrInput":"3","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"i","EditWindow":"rotation"},{"attrCap":"Aim to player","attrInput":"false","EditWindow":"bool"},{"attrCap":"Rotation velocity","attrInput":"0","EditWindow":""},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"},{"attrCap":"Time","attrInput":"0","EditWindow":""},{"attrCap":"Rebound","attrInput":"false","EditWindow":"bool"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Accel Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Max Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Shuttle","attrInput":"false","EditWindow":"bool"}],"AttributeCount":15}
+13,{"$type":".General.IfElse, LuaSTGEditorSharp","Attributes":[]}
+14,{"$type":".Bullet.CreateSimpleBullet, ","Attributes":[{"attrCap":"Style","attrInput":"grain_a","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Velocity","attrInput":"3","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"i","EditWindow":"rotation"},{"attrCap":"Aim to player","attrInput":"false","EditWindow":"bool"},{"attrCap":"Rotation velocity","attrInput":"0","EditWindow":""},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"},{"attrCap":"Time","attrInput":"0","EditWindow":""},{"attrCap":"Rebound","attrInput":"false","EditWindow":"bool"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Accel Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Max Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Shuttle","attrInput":"false","EditWindow":"bool"}],"AttributeCount":15}
+11,{"$type":".General.IfElse, LuaSTGEditorSharp","Attributes":[]}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"灵符 [不妒的猫灵]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"[契玄法师的引导]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".General.Comment, LuaSTGEditorSharp","Attributes":[{"attrCap":"Comment","attrInput":"lastword","EditWindow":""},{"attrCap":"Comment on child","attrInput":"true","EditWindow":"bool"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"式契 [永不破解的千金之诺]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"伯雀 鸣鸟","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"羽符 [寻梦之根羽]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"紫府山 涂哉","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"罗默特 • 伊斯德萨伊","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"宥 皓","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"北冥 绮","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Normal","EditWindow":""}],"AttributeCount":1,"IsExpanded":false}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"契玄寺 黑","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"[契玄法师的引导]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"式契 [永不破解的千金之诺]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"伯雀 鸣鸟","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"羽符 [寻梦之根羽]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"紫府山 涂哉","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"罗默特 • 伊斯德萨伊","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"宥 皓","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"北冥 绮","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Normal","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Hard","EditWindow":""}],"AttributeCount":1}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"契玄寺 黑","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"寻灵 [灵力吞噬]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+8,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"i","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"5","EditWindow":""}],"AttributeCount":5}
+9,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"10","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"p","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"360/10","EditWindow":""}],"AttributeCount":5}
+10,{"$type":".Bullet.CreateSimpleBullet, ","Attributes":[{"attrCap":"Style","attrInput":"ball_mid","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Velocity","attrInput":"3","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"360*sin(i)+p","EditWindow":"rotation"},{"attrCap":"Aim to player","attrInput":"false","EditWindow":"bool"},{"attrCap":"Rotation velocity","attrInput":"i+p","EditWindow":""},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"},{"attrCap":"Time","attrInput":"0","EditWindow":""},{"attrCap":"Rebound","attrInput":"false","EditWindow":"bool"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Accel Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Max Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Shuttle","attrInput":"false","EditWindow":"bool"}],"AttributeCount":15}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"5","EditWindow":"yield"}],"AttributeCount":1}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"灵气 [亶爰之类]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"[契玄法师的引导]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"式契 [永不破解的千金之诺]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"伯雀 鸣鸟","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"羽符 [寻梦之根羽]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"紫府山 涂哉","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"罗默特 • 伊斯德萨伊","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"宥 皓","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"北冥 绮","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Incredible","EditWindow":""}],"AttributeCount":1,"IsExpanded":false}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"契玄寺 黑","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Lunatic","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"寻灵 [灵力吞噬]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+8,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"i","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"5","EditWindow":""}],"AttributeCount":5}
+9,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"10","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"p","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"360/10","EditWindow":""}],"AttributeCount":5}
+10,{"$type":".Bullet.CreateSimpleBullet, ","Attributes":[{"attrCap":"Style","attrInput":"ball_mid","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Velocity","attrInput":"3","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"360*sin(i)+p","EditWindow":"rotation"},{"attrCap":"Aim to player","attrInput":"false","EditWindow":"bool"},{"attrCap":"Rotation velocity","attrInput":"i+p","EditWindow":""},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"},{"attrCap":"Time","attrInput":"0","EditWindow":""},{"attrCap":"Rebound","attrInput":"false","EditWindow":"bool"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Accel Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Max Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Shuttle","attrInput":"false","EditWindow":"bool"}],"AttributeCount":15}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"5","EditWindow":"yield"}],"AttributeCount":1}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"灵气 [亶爰之类]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"[契玄法师的引导]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"式契 [永不破解的千金之诺]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"伯雀 鸣鸟","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Lunatic","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"羽符 [寻梦之根羽]","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11,"IsExpanded":false}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"紫府山 涂哉","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Lunatic","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"罗默特 • 伊斯德萨伊","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Hard","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"宥 皓","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Lunatic","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"北冥 绮","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Lunatic","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Extra","EditWindow":""}],"AttributeCount":1,"IsExpanded":false}
+4,{"$type":".Boss.BossDefine, ","Attributes":[{"attrCap":"Name","attrInput":"国主","EditWindow":""},{"attrCap":"Difficulty","attrInput":"EX","EditWindow":"objDifficulty"},{"attrCap":"Displayed name","attrInput":"Name","EditWindow":""},{"attrCap":"Background","attrInput":"","EditWindow":"BG"},{"attrCap":"Background Music","attrInput":"\"\"","EditWindow":"BGM"}],"AttributeCount":5,"IsExpanded":false}
+5,{"$type":".Boss.BossInit, ","Attributes":[{"attrCap":"Position","attrInput":"240,384","EditWindow":"position"},{"attrCap":"Spell Card Background","attrInput":"","EditWindow":"bossBG"}],"AttributeCount":2}
+5,{"$type":".Boss.BossSpellCard, ","Attributes":[{"attrCap":"Name","attrInput":"","EditWindow":"SCName"},{"attrCap":"Protect time (sec)","attrInput":"2","EditWindow":""},{"attrCap":"DMG redu. time (sec)","attrInput":"5","EditWindow":""},{"attrCap":"Total time (sec)","attrInput":"60","EditWindow":""},{"attrCap":"Hit point","attrInput":"1800","EditWindow":""},{"attrCap":"Drop power","attrInput":"0","EditWindow":""},{"attrCap":"Drop faith","attrInput":"0","EditWindow":""},{"attrCap":"Drop point","attrInput":"0","EditWindow":""},{"attrCap":"Immune to bomb","attrInput":"false","EditWindow":"bool"},{"attrCap":"Performing action","attrInput":"false","EditWindow":"bool"},{"attrCap":"Optional ID","attrInput":"","EditWindow":""}],"AttributeCount":11}
+6,{"$type":".Boss.BossSCBeforeStart, ","Attributes":[]}
+6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"0,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"60","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
+6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
+6,{"$type":".Boss.BossSCAfter, ","Attributes":[]}
+2,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Resources","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S01","EditWindow":""}],"AttributeCount":1}
+4,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"boss","EditWindow":""}],"AttributeCount":1}
+5,{"$type":".Bullet.BulletDefine, ","Attributes":[{"attrCap":"Name","attrInput":"S1S1","EditWindow":""},{"attrCap":"Difficulty","attrInput":"Easy","EditWindow":"objDifficulty"}],"AttributeCount":2}
+6,{"$type":".Bullet.BulletInit, ","Attributes":[{"attrCap":"Parameter List","attrInput":"v","EditWindow":""},{"attrCap":"Style","attrInput":"ball_light","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"}],"AttributeCount":5}
+7,{"$type":".Audio.PlaySE, ","Attributes":[{"attrCap":"Name","attrInput":"\"tan01\"","EditWindow":"se"},{"attrCap":"Volume","attrInput":"0.1","EditWindow":""},{"attrCap":"Pan","attrInput":"self.x/256","EditWindow":""},{"attrCap":"Ignore default volume","attrInput":"false","EditWindow":"bool"}],"AttributeCount":4}
+7,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"self.hscale = 2\r\nself.vscale = 2","EditWindow":"code"}],"AttributeCount":1}
+7,{"$type":".Task.TaskNode, ","Attributes":[]}
+8,{"$type":".Object.SetVelocity, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Velocity","attrInput":"v","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Aim to Player","attrInput":"true","EditWindow":"bool"},{"attrCap":"Set Rotation","attrInput":"true","EditWindow":"bool"}],"AttributeCount":5}
+8,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"","EditWindow":""}],"AttributeCount":5}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"1","EditWindow":"yield"}],"AttributeCount":1}
+9,{"$type":".Object.SetVelocity, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Velocity","attrInput":"sqrt(self.vx*self.vx+self.vy*self.vy)","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Aim to Player","attrInput":"true","EditWindow":"bool"},{"attrCap":"Set Rotation","attrInput":"true","EditWindow":"bool"}],"AttributeCount":5}
+9,{"$type":".Object.SetAccel, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Acceleration","attrInput":"-0.01","EditWindow":""},{"attrCap":"Angle","attrInput":"0","EditWindow":""},{"attrCap":"Aim to Player","attrInput":"true","EditWindow":"bool"}],"AttributeCount":4}
+9,{"$type":".General.IfNode, LuaSTGEditorSharp","Attributes":[{"attrCap":"Condition","attrInput":"self.vx*self.vx+self.vy*self.vy<0.05","EditWindow":""}],"AttributeCount":1}
+10,{"$type":".General.IfThen, LuaSTGEditorSharp","Attributes":[]}
+11,{"$type":".Object.SetVelocity, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Aim to Player","attrInput":"true","EditWindow":"bool"},{"attrCap":"Set Rotation","attrInput":"true","EditWindow":"bool"}],"AttributeCount":5}
+11,{"$type":".Object.SetAccel, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Angle","attrInput":"0","EditWindow":""},{"attrCap":"Aim to Player","attrInput":"true","EditWindow":"bool"}],"AttributeCount":4}
+11,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"30","EditWindow":"yield"}],"AttributeCount":1}
+11,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"self.hide = true","EditWindow":"code"}],"AttributeCount":1}
+11,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"1","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"p","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"10","EditWindow":""}],"AttributeCount":5}
+12,{"$type":".Audio.PlaySE, ","Attributes":[{"attrCap":"Name","attrInput":"\"tan00\"","EditWindow":"se"},{"attrCap":"Volume","attrInput":"0.1","EditWindow":""},{"attrCap":"Pan","attrInput":"self.x/256","EditWindow":""},{"attrCap":"Ignore default volume","attrInput":"false","EditWindow":"bool"}],"AttributeCount":4,"IsSelected":true}
+12,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"20","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"i","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"0","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"360/20","EditWindow":""}],"AttributeCount":5,"IsBanned":true}
+13,{"$type":".Bullet.CreateSimpleBullet, ","Attributes":[{"attrCap":"Style","attrInput":"grain_b","EditWindow":"bulletStyle"},{"attrCap":"Color","attrInput":"COLOR_RED","EditWindow":"color"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Velocity","attrInput":"3","EditWindow":"velocity"},{"attrCap":"Angle","attrInput":"i+p","EditWindow":"rotation"},{"attrCap":"Aim to player","attrInput":"true","EditWindow":"bool"},{"attrCap":"Rotation velocity","attrInput":"0","EditWindow":""},{"attrCap":"Stay on create","attrInput":"true","EditWindow":"bool"},{"attrCap":"Destroyable","attrInput":"true","EditWindow":"bool"},{"attrCap":"Time","attrInput":"0","EditWindow":""},{"attrCap":"Rebound","attrInput":"false","EditWindow":"bool"},{"attrCap":"Acceleration","attrInput":"0","EditWindow":""},{"attrCap":"Accel Angle","attrInput":"0","EditWindow":"rotation"},{"attrCap":"Max Velocity","attrInput":"0","EditWindow":"velocity"},{"attrCap":"Shuttle","attrInput":"false","EditWindow":"bool"}],"AttributeCount":15,"IsBanned":true}
+12,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"10","EditWindow":"yield"}],"AttributeCount":1}
+11,{"$type":".Object.Del, ","Attributes":[{"attrCap":"Target","attrInput":"self","EditWindow":"target"},{"attrCap":"Trigger event","attrInput":"true","EditWindow":"bool"}],"AttributeCount":2}
+10,{"$type":".General.IfElse, LuaSTGEditorSharp","Attributes":[]}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S02","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S03","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S04","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S05","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"S06","EditWindow":""}],"AttributeCount":1}
+3,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"SEx","EditWindow":""}],"AttributeCount":1}
+2,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Assets","EditWindow":""}],"AttributeCount":1}
+2,{"$type":".Stage.StageGroup, ","Attributes":[{"attrCap":"Name","attrInput":"Easy","EditWindow":"stageGroup"},{"attrCap":"Start life","attrInput":"2","EditWindow":""},{"attrCap":"Start power","attrInput":"400","EditWindow":""},{"attrCap":"Start faith","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb","attrInput":"2","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Difficulty value","attrInput":"2","EditWindow":"difficulty"}],"AttributeCount":7}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"1","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+5,{"$type":".Boss.CreateBoss, ","Attributes":[{"attrCap":"Name","attrInput":"\"契玄寺 黑:Easy\"","EditWindow":"bossDef"},{"attrCap":"Wait","attrInput":"true","EditWindow":"bool"}],"AttributeCount":2}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"2","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"3","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"4","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"5","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"6","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+2,{"$type":".Stage.StageGroup, ","Attributes":[{"attrCap":"Name","attrInput":"Normal","EditWindow":"stageGroup"},{"attrCap":"Start life","attrInput":"2","EditWindow":""},{"attrCap":"Start power","attrInput":"400","EditWindow":""},{"attrCap":"Start faith","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb","attrInput":"2","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Difficulty value","attrInput":"2","EditWindow":"difficulty"}],"AttributeCount":7,"IsExpanded":false}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"1","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"2","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"3","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"4","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"5","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"6","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+2,{"$type":".Stage.StageGroup, ","Attributes":[{"attrCap":"Name","attrInput":"Hard","EditWindow":"stageGroup"},{"attrCap":"Start life","attrInput":"2","EditWindow":""},{"attrCap":"Start power","attrInput":"400","EditWindow":""},{"attrCap":"Start faith","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb","attrInput":"2","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Difficulty value","attrInput":"2","EditWindow":"difficulty"}],"AttributeCount":7,"IsExpanded":false}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"1","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"2","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"3","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"4","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"5","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"6","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+2,{"$type":".Stage.StageGroup, ","Attributes":[{"attrCap":"Name","attrInput":"Lunatic","EditWindow":"stageGroup"},{"attrCap":"Start life","attrInput":"2","EditWindow":""},{"attrCap":"Start power","attrInput":"400","EditWindow":""},{"attrCap":"Start faith","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb","attrInput":"2","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Difficulty value","attrInput":"2","EditWindow":"difficulty"}],"AttributeCount":7,"IsExpanded":false}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"1","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"2","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"3","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"4","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"5","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"6","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
+2,{"$type":".Stage.StageGroup, ","Attributes":[{"attrCap":"Name","attrInput":"Extra","EditWindow":"stageGroup"},{"attrCap":"Start life","attrInput":"2","EditWindow":""},{"attrCap":"Start power","attrInput":"400","EditWindow":""},{"attrCap":"Start faith","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb","attrInput":"2","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"},{"attrCap":"Difficulty value","attrInput":"2","EditWindow":"difficulty"}],"AttributeCount":7,"IsExpanded":false}
+3,{"$type":".Stage.Stage, ","Attributes":[{"attrCap":"Name","attrInput":"1","EditWindow":""},{"attrCap":"Start life (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Start power (practice)","attrInput":"400","EditWindow":""},{"attrCap":"Start faith (practice)","attrInput":"50000","EditWindow":""},{"attrCap":"Start bomb (practice)","attrInput":"8","EditWindow":""},{"attrCap":"Allow practice","attrInput":"true","EditWindow":"bool"}],"AttributeCount":6,"IsExpanded":false}
+4,{"$type":".Task.TaskNode, ","Attributes":[]}
+5,{"$type":".General.Folder, LuaSTGEditorSharp","Attributes":[{"attrCap":"Name","attrInput":"Initialize","EditWindow":""}],"AttributeCount":1}
+6,{"$type":".Stage.StageBG, ","Attributes":[{"attrCap":"Background","attrInput":"temple_background","EditWindow":"BG"}],"AttributeCount":1}
+5,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
