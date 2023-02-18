@@ -378,18 +378,18 @@
 6,{"$type":".Boss.BossSCStart, ","Attributes":[]}
 7,{"$type":".Task.TaskNode, ","Attributes":[]}
 8,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"local dir = 1","EditWindow":"code"}],"AttributeCount":1}
-8,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
 8,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"_infinite","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"","EditWindow":""}],"AttributeCount":5}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".Task.TaskNode, ","Attributes":[]}
 10,{"$type":".Task.TaskMoveTo, ","Attributes":[{"attrCap":"Destination","attrInput":"100*dir,120","EditWindow":"position"},{"attrCap":"Frame","attrInput":"360","EditWindow":""},{"attrCap":"Mode","attrInput":"MOVE_NORMAL","EditWindow":"interpolation"}],"AttributeCount":3}
 10,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"30","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"3","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"","EditWindow":""}],"AttributeCount":5}
-10,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"6","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"a","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"30","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"60","EditWindow":""}],"AttributeCount":5}
+10,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"6","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"a","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"30","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"60","EditWindow":""}],"AttributeCount":5,"IsSelected":true}
 11,{"$type":".Bullet.CreateBullet, ","Attributes":[{"attrCap":"Name","attrInput":"\"S1S2_sniper:Hard\"","EditWindow":"bulletDef"},{"attrCap":"Position","attrInput":"self.x,self.y","EditWindow":"position"},{"attrCap":"Parameters","attrInput":"a, 100","EditWindow":"bulletParam"}],"AttributeCount":3}
 10,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"90","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"dir = -dir","EditWindow":"code"}],"AttributeCount":1}
-9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"180","EditWindow":"yield"}],"AttributeCount":1,"IsSelected":true}
+9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"180","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
 7,{"$type":".Task.TaskNode, ","Attributes":[]}
 8,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"local dir = 1","EditWindow":"code"}],"AttributeCount":1}
@@ -401,7 +401,6 @@
 10,{"$type":".General.Repeat, LuaSTGEditorSharp","Attributes":[{"attrCap":"Times","attrInput":"2","EditWindow":"yield"},{"$type":".DependencyAttrItem, ","attrCap":"Number of Var","attrInput":"1","EditWindow":""},{"attrCap":"Var 1 name","attrInput":"a","EditWindow":""},{"attrCap":"Var 1 init value","attrInput":"-15","EditWindow":""},{"attrCap":"Var 1 increment","attrInput":"30","EditWindow":""}],"AttributeCount":5}
 11,{"$type":".Object.CreateObject, ","Attributes":[{"attrCap":"Name","attrInput":"\"S1S2_string:Hard\"","EditWindow":"objectDef"},{"attrCap":"Position","attrInput":"posx+length*cos(a+ang),posy+length*sin(a+ang)","EditWindow":"position"},{"attrCap":"Parameters","attrInput":"ang,3,t","EditWindow":"objectParam"}],"AttributeCount":3}
 9,{"$type":".General.Code, LuaSTGEditorSharp","Attributes":[{"attrCap":"Code","attrInput":"dir = -dir","EditWindow":"code"}],"AttributeCount":1}
-9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"60","EditWindow":"yield"}],"AttributeCount":1}
 9,{"$type":".Task.TaskWait, ","Attributes":[{"attrCap":"Time","attrInput":"240","EditWindow":"yield"}],"AttributeCount":1}
 6,{"$type":".Boss.BossSCBeforeFinish, ","Attributes":[]}
 6,{"$type":".Boss.BossSCFinish, ","Attributes":[]}
